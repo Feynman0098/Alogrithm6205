@@ -5,7 +5,7 @@ public class RemoveElements203 {
         list.addNodeToHead(6);
         list.addNodeToHead(5);
         list.addNodeToHead(4);
-        list.addNodeToHead(3);
+        list.addNodeToHead(6);
         list.addNodeToHead(6);
         list.addNodeToHead(2);
         list.addNodeToHead(1);
@@ -24,6 +24,8 @@ public class RemoveElements203 {
                 } else {
                     beforeTemp.next = beforeTemp.next.next;
                 }
+                temp = temp.next;
+                continue;
             }
             beforeTemp = temp;
             temp = temp.next;

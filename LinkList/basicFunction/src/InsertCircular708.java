@@ -45,6 +45,10 @@ public class InsertCircular708 {
                 newNode.next = temp.next;
                 temp.next = newNode;
                 break;
+            } else if (temp.next == head) {
+                newNode.next = temp.next;
+                temp.next = newNode;
+                break;
             }
             temp = temp.next;
         } while (temp != head);

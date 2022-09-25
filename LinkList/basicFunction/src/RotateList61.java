@@ -24,7 +24,7 @@ public class RotateList61 {
         int num = length - (k % length);
 
         ListNode startNode = head;
-        ListNode endNode = new ListNode<>();
+        ListNode endNode = new ListNode();
         for (int x = 0; x < num; x++) {
             endNode = startNode;
             startNode = startNode.next;

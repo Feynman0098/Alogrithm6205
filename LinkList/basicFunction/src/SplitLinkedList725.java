@@ -17,13 +17,11 @@ public class SplitLinkedList725 {
         list.addNodeToHead(2);
         list.addNodeToHead(1);
 
-        ArrayList result = splitLinkedList(list.head, 3);
-        System.out.println(result);
+        ListNode[] result = splitLinkedList(list.head, 3);
 
     }
 
-    public static ArrayList splitLinkedList (ListNode<Integer> head, int k) {
-        ArrayList array = new ArrayList<>();
+    public static ListNode[] splitLinkedList (ListNode<Integer> head, int k) {
 
         int length = 0;
         ListNode temp = head;
@@ -33,17 +31,29 @@ public class SplitLinkedList725 {
         }
         temp = head;
 
+        ListNode[] array = new ListNode[k];
+
         int x = length / k;
         int y = length % k;
 
         for (int a = 0; a < k; a++) {
-            ArrayList tempArray = new ArrayList<>();
-            for (int b = a < y ? x + 1 : x; b > 0; b--) {
-                tempArray.add(temp.val);
+            int num = ( a < y )? x + 1 : x;
+            ListNode[] tempArray = new ListNode[num];
+            ListNode tempHead = null;
+            ListNode befTemp = null;
+            for (int b = 0; b < num; b++) {
+                tempArray[b] = temp;
+                if (b == 0) {
+                    tempHead = temp;
+                }
+                befTemp = temp;
                 if (temp != null) temp = temp.next;
+                if (b == num - 1) {
+                    befTemp.next = null;
+                }
             }
 
-            array.add(tempArray);
+            array[a] = tempHead;
         }
         return array;
     }
