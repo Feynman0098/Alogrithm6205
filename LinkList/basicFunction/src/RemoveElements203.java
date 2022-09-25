@@ -9,7 +9,7 @@ public class RemoveElements203 {
         list.addNodeToHead(6);
         list.addNodeToHead(2);
         list.addNodeToHead(1);
-//  get the rotated list
+//  get the result
         LinkList.printFromHead(removeElements(list.head, 6));
     }
 
