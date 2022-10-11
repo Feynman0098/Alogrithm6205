@@ -1,6 +1,4 @@
-import apple.laf.JRSUIUtils;
-
-class Solution {
+class SymatricTree101 {
     public static boolean isSymmetric(TreeNode root) {
         return isMirror(root, root);
     }
