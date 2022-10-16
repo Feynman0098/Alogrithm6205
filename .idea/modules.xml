@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Alogrithm6205.iml" filepath="$PROJECT_DIR$/Alogrithm6205.iml" />
       <module fileurl="file://$PROJECT_DIR$/BinaryTree-Assignment02/BinaryTree.iml" filepath="$PROJECT_DIR$/BinaryTree-Assignment02/BinaryTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LeetCodeLab/LeetCodeLab.iml" filepath="$PROJECT_DIR$/LeetCodeLab/LeetCodeLab.iml" />
     </modules>
   </component>
 </project>
